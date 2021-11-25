@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.btn__separator {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  font-weight: 300;
+  line-height: 0.1em;
+}
+
+.btn__separator span {
+  background: white;
+  color: #606060;
+  padding: 0 10px;
+}
+
+.cards {
+  backdrop-filter: blur(2rem);
+  /* background-image: linear-gradient(to right bottom, rgba(101, 223, 201,0.7), rgba(108,219,235,0.3)); */
+}
+
+.circle1,
+.circle2 {
+  background: white;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(101, 223, 201, 0.9),
+    rgba(255, 255, 255, 0.1)
+  );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  /* z-index: 100; */
+  /* transform: translate(-50%, -50%); */
+ 
+}
+.circle1 {
+  transform: translate(50%, -150%);
+}
+
+.circle2 {
+  position: fixed;
+  transform: translate(-150%, 50%);
+}
+
+
+.login__heading {
+  /* display: flex; */
+  display: inline-flex;
+  vertical-align: bottom;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pacifico", cursive;
+  color: rgba(22, 78, 135, 100);
+}
+
+.login__logo {
+  height: 75px;
+  /* transform: rotateX(45deg); */
+  transform: translateY(-6.5px);
+  /* padding-left: 10px; */
+  object-fit: contain;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .circle1,.circle2{
+    display: none;
+  }
+  .login__heading{
+    display: block;
+  }
+  
+  #resp__cardBody{
+    margin: 1rem !important;
+  }
+}
